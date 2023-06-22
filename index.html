@@ -4,29 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator suhu</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <p>
-        Masukkan suhu derajat Celcius (C) ke kotak di bawah, lalu klik tombol
-        konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (F).
-      </p>
-
-      <div class="celcius">
-        <p>Celcius (C):</p>
-        <input type="text" />
-        <!-- <button onclick="btn()">show</button> -->
+      <div class="title">
+        <h1>Enter Temprature</h1>
       </div>
 
-      <div class="action">
-        <button onclick="CtoF()">Konversi</button>
-        <button onclick="reset()">Reset</button>
-        <button>Reverse</button>
+      <div class="celcius">
+        <h3>Celcius</h3>
+        <input type="text" />
+        <div class="action">
+          <button onclick="CtoF()">Konversi</button>
+          <button onclick="reset()">Reset</button>
+          <button>Reverse</button>
+        </div>
       </div>
 
       <div class="fahrenheit">
-        <p>Fahrenheit (F):</p>
+        <h3>Fahrenheit</h3>
         <input type="text" />
+        <div class="action">
+          <button onclick="FtoC()">Konversi</button>
+          <button onclick="reset()">Reset</button>
+          <button>Reverse</button>
+        </div>
       </div>
 
       <div class="rumus">

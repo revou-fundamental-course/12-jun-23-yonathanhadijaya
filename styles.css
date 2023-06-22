@@ -1,0 +1,41 @@
+:root {
+  --primary: #78bcc4;
+  --bg: #f7f8f3;
+  --text: #002c3e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box;
+  outline: none;
+  border: none; */
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #002c3e;
+}
+
+.container {
+  border: 0.3rem solid var(--primary);
+  border-radius: 1rem;
+  width: 60%;
+  height: 80%;
+  margin: 5rem auto;
+  padding: 1rem;
+  line-height: 3rem;
+}
+
+
+.celcius {
+  padding: 1rem;
+}
+.celcius div {
+  display: block;
+}
+.fahrenheit div {
+  display: none;
+}
