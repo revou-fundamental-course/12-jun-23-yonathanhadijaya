@@ -1,5 +1,5 @@
-var celcius;
-var fahrenheit;
+var celcius = 0;
+var fahrenheit = 0;
 
 function CtoF(celcius) {
   celcius = document.querySelector(".celcius").querySelector("input").value;
@@ -10,18 +10,19 @@ function CtoF(celcius) {
   document.querySelector(".rumus").querySelector("p").innerHTML =
     celcius + "C * 9/5 + 32 = " + fahrenheit + "F";
 }
-function FtoC() {
+
+function FtoC(fahrenheit) {
   fahrenheit = document.querySelector(".fahrenheit").value;
   celcius = ((fahrenheit - 32) * 5) / 9;
   console.log(fahrenheit);
-  document.querySelector(".celcius").querySelector("input").value = celciuc;
+  document.querySelector(".celcius").querySelector("input").value = celcius;
   document.querySelector(".rumus").querySelector("p").innerHTML =
     fahrenheit + "F - 32 * 5/9 = " + celcius + "C";
 }
 
 function reset() {
-  document.querySelector(".celcius").querySelector("input").value = "";
-  document.querySelector(".fahrenheit").querySelector("input").value = "";
+  document.querySelector(".celcius").querySelector("input").value = "0";
+  document.querySelector(".fahrenheit").querySelector("input").value = "0";
   document.querySelector(".rumus").querySelector("p").innerHTML = "";
 }
 
